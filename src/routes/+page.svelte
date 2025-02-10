@@ -10,12 +10,14 @@
 <!-- Test avec un truc trouvé sur internet-->
 
 <script>
-	import Nav from "./components/Nav.svelte";
-	import Hero from "./components/Hero.svelte";
+	import Nav from "$lib/Components/Nav.svelte";
+	import Hero from "$lib/Components/Hero.svelte";
+	import Pricing from "$lib/Components/Pricing.svelte";
 </script>
 
 <Nav />
 <Hero />
+<Pricing />
 
 <style>
     body {
