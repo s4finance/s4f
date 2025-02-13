@@ -10,19 +10,46 @@
 <!-- Test avec un truc trouvé sur internet-->
 
 <script>
-	import Nav from "$lib/Components/Nav.svelte";
-	import Hero from "$lib/Components/Hero.svelte";
-	import Pricing from "$lib/Components/Pricing.svelte";
+	import Navigation from "$lib/Components/Navbar_site1.svelte";
+	import Pricing from "$lib/Components/Test2_pricing.svelte"
+	import Nav from "$lib/Components/Navbar_nike.svelte"
+	import Hero from "$lib/Components/Hero.svelte"
+	import PopularProducts from "$lib/Components/PopularProducts.svelte"
+	import SuperQuality from "$lib/Components/SuperQuality.svelte"
+	import Services from "$lib/Components/Services.svelte"
+	import SpecialOffer from '$lib/Components/SpecialOffer.svelte';
+	import CustomerReviews from '$lib/Components/CustomerReviews.svelte';
+	import Subscribe from '$lib/Components/Subscribe.svelte';
+	import Footer from '$lib/Components/Footer.svelte';
 </script>
 
-<Nav />
-<Hero />
-<Pricing />
+<main>
+	<Nav />
+	<section class="xl:padding-1 wide:padding-r padding-b">
+		<Hero />
+	</section>
+	<section class="padding">
+		<PopularProducts />
+	</section>
+	<section class="padding">
+		<SuperQuality />
+	</section>
+	<section class="padding padding-x py-10">
+		<Services />
+	</section>
+	<section class="padding">
+		<SpecialOffer />
+	</section>
+	<section class="bg-pale-blue padding">
+		<CustomerReviews />
+	</section>
+	<section class="padding-x sm:py-32 py-16 w-full ">
+		<Subscribe />
+	</section>
+	<section class="bg-black padding-x padding-t pb-8">
+		<Footer />
+	</section>
+</main>
 
 <style>
-    body {
-        background: black;
-        color: white;
-        font-family: sans-serif;
-    }
 </style>

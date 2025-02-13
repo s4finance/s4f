@@ -1,36 +1,38 @@
-<script>
-
+<script lang="ts">
+import Button from '$lib/Components/Button.svelte';
+import { shoes, statistics } from '../../Constants';
+import ShoeCard from '$lib/Components/ShoeCard.svelte';
 </script>
 
-<section class="hero">
-	<h1>Give your people a platform</h1>
-	<p>Create can-do culture with a modern employee platform built for growth</p>
-	<button class="scroll-down">⬇️</button>
+<section id="home" class="w-full border-2 flex xl:flex-row flex-col
+												justify-center min-h-screen gap-10 max-container">
+	<div class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+		<p class="text-xl font-montserrat text-coral-red ">Our Summer Collection</p>
+		<h1 class="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading[82px] font-bold">
+			<span class="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
+			<br/>
+			<span class="text-coral-red inline-block mt-3 ">Nike</span>
+			Shoes
+		</h1>
+		<p class="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish Nike arrivals, quality, comfort, and innovation for your active life. </p>
+		<Button label="Shop Now" iconURL="/icons/arrow-right.svg"/>
+		<div class="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+			{#each statistics as item}
+				<div>
+					<p class="text-4xl font-palanquin font-bold">{item.value}</p>
+					<p class="leading-7 font-montserrat text-slate-gray">{item.label}</p>
+				</div>
+			{/each}
+		</div>
+	</div>
+	<div class="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+		<img src="/images/big-shoe1.png" alt="Shoe collection" width="610" height="502" class="object-contain relative z-10">
+		<div class="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+			{#each shoes as item}
+				<div>
+					<ShoeCard imgURL="{item}" changeBigShoeImage="" bigShoeImage="" />
+				</div>
+			{/each}
+		</div>
+	</div>
 </section>
-
-<style>
-    .hero {
-        background: #f3f2ee;
-        border-radius: 20px;
-        padding: 4rem;
-        text-align: center;
-        max-width: 800px;
-        margin: 2rem auto;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    p {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        color: gray;
-    }
-    .scroll-down {
-        margin-top: 2rem;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-</style>
