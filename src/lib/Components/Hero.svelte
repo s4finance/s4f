@@ -4,7 +4,7 @@ import { shoes, statistics } from '../../Constants';
 import ShoeCard from '$lib/Components/ShoeCard.svelte';
 </script>
 
-<section id="home" class="w-full border-2 flex xl:flex-row flex-col
+<section id="home" class="w-full flex xl:flex-row flex-col
 												justify-center min-h-screen gap-10 max-container">
 	<div class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
 		<p class="text-xl font-montserrat text-coral-red ">Our Summer Collection</p>
@@ -27,7 +27,7 @@ import ShoeCard from '$lib/Components/ShoeCard.svelte';
 	</div>
 	<div class="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
 		<img src="/images/big-shoe1.png" alt="Shoe collection" width="610" height="502" class="object-contain relative z-10">
-		<div class="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+		<div class="flex sm:gap-6 gap-4 absolute -bottom-[1%] sm:left-[15%] max-sm:px-6">
 			{#each shoes as item}
 				<div>
 					<ShoeCard imgURL="{item}" changeBigShoeImage="" bigShoeImage="" />

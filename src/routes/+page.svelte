@@ -25,7 +25,7 @@
 
 <main>
 	<Nav />
-	<section class="xl:padding-1 wide:padding-r padding-b">
+	<section class="xl:padding-1 wide:padding-r padding">
 		<Hero />
 	</section>
 	<section class="padding">

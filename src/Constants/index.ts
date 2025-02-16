@@ -1,25 +1,25 @@
 export const icons = {
-	facebook: "/static/icons/facebook.svg",
-	instagram: "/assets/icons/instagram.svg",
-	twitter: "/assets/icons/twitter.svg",
-	shieldTick: "/assets/icons/shieldTick.svg",
-	truckFast: "/assets/icons/truckFast.svg",
-	support: "/assets/icons/support.svg",
+	facebook: "/icons/facebook.svg",
+	instagram: "/icons/instagram.svg",
+	twitter: "/icons/twitter.svg",
+	shieldTick: "/icons/shield-tick.svg",
+	truckFast: "/icons/truck-fast.svg",
+	support: "/icons/support.svg",
 };
 
 export const images = {
-	bigShoe1: "/static/images/big-shoe1.png",
-	bigShoe2: "/static/images/big-shoe2.png",
-	bigShoe3: "/static/images/big-shoe3.png",
-	shoe4: "/static/images/shoe4.svg",
-	shoe5: "/static/images/shoe5.svg",
-	shoe6: "/static/images/shoe6.svg",
-	shoe7: "/static/images/shoe7.svg",
-	customer1: "/static/images/customer1.jpeg",
-	customer2: "/static/images/customer2.svg",
-	thumbnailShoe1: "/static/images/thumbnail-shoe1.svg",
-	thumbnailShoe2: "/static/images/thumbnail-shoe2.svg",
-	thumbnailShoe3: "/static/images/thumbnail-shoe3.svg",
+	bigShoe1: "/images/big-shoe1.png",
+	bigShoe2: "/images/big-shoe2.png",
+	bigShoe3: "/images/big-shoe3.png",
+	shoe4: "/images/shoe4.svg",
+	shoe5: "/images/shoe5.svg",
+	shoe6: "/images/shoe6.svg",
+	shoe7: "/images/shoe7.svg",
+	customer1: "/images/customer1.jpeg",
+	customer2: "/images/customer2.svg",
+	thumbnailShoe1: "/images/thumbnail-shoe1.svg",
+	thumbnailShoe2: "/images/thumbnail-shoe2.svg",
+	thumbnailShoe3: "/images/thumbnail-shoe3.svg",
 };
 
 export const navLinks = [
