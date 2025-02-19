@@ -1,6 +1,6 @@
 <script lang="ts">
 
-import Button from '$lib/Components/Button.svelte';
+import Button from '$lib/Components/Nike_Website/Button.svelte';
 </script>
 
 <section class="max-container flex justify-between items-center max-lg: flex-col gap-10" id="Contact Us">

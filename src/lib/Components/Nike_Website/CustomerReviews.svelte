@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { reviews } from '../../Constants';
-	import ReviewCard from '$lib/Components/ReviewCard.svelte';
+	import { reviews } from '../../../Constants';
+	import ReviewCard from '$lib/Components/Nike_Website/ReviewCard.svelte';
 </script>
 
 <section class="max-container">

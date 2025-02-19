@@ -10,19 +10,21 @@
 <!-- Test avec un truc trouvé sur internet-->
 
 <script>
-	import Navigation from "$lib/Components/Navbar_site1.svelte";
-	import Pricing from "$lib/Components/Test2_pricing.svelte"
-	import Nav from "$lib/Components/Navbar_nike.svelte"
-	import Hero from "$lib/Components/Hero.svelte"
-	import PopularProducts from "$lib/Components/PopularProducts.svelte"
-	import SuperQuality from "$lib/Components/SuperQuality.svelte"
-	import Services from "$lib/Components/Services.svelte"
-	import SpecialOffer from '$lib/Components/SpecialOffer.svelte';
-	import CustomerReviews from '$lib/Components/CustomerReviews.svelte';
-	import Subscribe from '$lib/Components/Subscribe.svelte';
-	import Footer from '$lib/Components/Footer.svelte';
+	import Nav from "$lib/Components/Nike_Website/Navbar_nike.svelte"
+	import Hero from "$lib/Components/Nike_Website/Hero.svelte"
+	import PopularProducts from "$lib/Components/Nike_Website/PopularProducts.svelte"
+	import SuperQuality from "$lib/Components/Nike_Website/SuperQuality.svelte"
+	import Services from "$lib/Components/Nike_Website/Services.svelte"
+	import SpecialOffer from '$lib/Components/Nike_Website/SpecialOffer.svelte';
+	import CustomerReviews from '$lib/Components/Nike_Website/CustomerReviews.svelte';
+	import Subscribe from '$lib/Components/Nike_Website/Subscribe.svelte';
+	import Footer from '$lib/Components/Nike_Website/Footer.svelte';
+	import Nav_1 from '$lib/Components/Nav_1.svelte';
+	import Hero_1 from '$lib/Components/Hero_1.svelte';
+
 </script>
 
+<!-- Nike Site
 <main>
 	<Nav />
 	<section class="xl:padding-1 wide:padding-r padding">
@@ -48,6 +50,17 @@
 	</section>
 	<section class="bg-black padding-x padding-t pb-8">
 		<Footer />
+	</section>
+</main>
+-->
+
+<main class="bg-gray-50">
+	<section>
+		<Nav_1 />
+		<div class="xl:padding-1 wide:padding-r padding">
+			<Hero_1 />
+		</div>
+
 	</section>
 </main>
 

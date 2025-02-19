@@ -19,6 +19,7 @@ export default {
 			fontFamily: {
 				palanquin: ['Palanquin', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
+				wix: ["Wix Madefor Display", "sans-serif"],
 			},
 			colors: {
 				primary: "#ECEEFF",

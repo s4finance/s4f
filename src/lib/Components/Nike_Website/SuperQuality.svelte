@@ -1,5 +1,5 @@
 <script>
-import Button from '$lib/Components/Button.svelte';
+import Button from '$lib/Components/Nike_Website/Button.svelte';
 </script>
 
 <section id="about-us" class="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">

@@ -1,6 +1,6 @@
 <script>
 	import PopularProductCard from './PopularProductCard.svelte';
-	import { products } from '../../Constants';
+	import { products } from '../../../Constants/index';
 </script>
 
 <section id="products" class="max-container max-sm:mt-12 ">

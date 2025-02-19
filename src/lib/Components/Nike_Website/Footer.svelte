@@ -1,12 +1,12 @@
 <script lang="ts">
 
-	import { footerLinks, socialMedia } from '../../Constants';
+	import { footerLinks, socialMedia } from '../../../Constants';
 </script>
 
 <footer class="max-container" id="contact-us">
 	<div class="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
 		<div class="flex flex-col items-start">
-			<a href="/">
+			<a href="/static">
 				<img src="/images/footer-logo.svg" alt="footer logo" width="150" height="46">
 			</a>
 			<p class="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">Get shoes ready for the new term at your nearest Nike store. Find your perfect size in your perfect dream.</p>

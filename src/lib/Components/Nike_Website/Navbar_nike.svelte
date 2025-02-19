@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { navLinks } from "../../Constants";
+	import { navLinks } from "../../../Constants";
 </script>
 
 <header class="padding-x py-8 absolute z-10 w-full">
 	<nav class="flex justify-between items-center max-container">
-		<a href="/">
+		<a href="/static">
 			<img src="/images/header-logo.svg" alt="Logo" width="130" height="29">
 		</a>
 		<ul class="flex-1 flex justify-center items-center gap-16 max-lg:hidden">

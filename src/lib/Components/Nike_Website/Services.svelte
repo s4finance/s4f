@@ -1,6 +1,6 @@
 <script>
-	import {services} from '../../Constants';
-	import ServiceCard from '$lib/Components/ServiceCard.svelte';
+	import {services} from '../../../Constants/index';
+	import ServiceCard from '$lib/Components/Nike_Website/ServiceCard.svelte';
 </script>
 
 <section class="max-container flex justify-center flex-wrap gap-9">

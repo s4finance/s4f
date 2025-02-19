@@ -1,7 +1,7 @@
 <script lang="ts">
-import Button from '$lib/Components/Button.svelte';
-import { shoes, statistics } from '../../Constants';
-import ShoeCard from '$lib/Components/ShoeCard.svelte';
+import Button from '$lib/Components/Nike_Website/Button.svelte';
+import { shoes, statistics } from '../../../Constants';
+import ShoeCard from '$lib/Components/Nike_Website/ShoeCard.svelte';
 </script>
 
 <section id="home" class="w-full flex xl:flex-row flex-col
