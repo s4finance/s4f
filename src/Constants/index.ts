@@ -29,6 +29,13 @@ export const navLinks = [
 	{ href: "#contact-us", label: "Contact Us" },
 ];
 
+export const trusts = [
+	{ title: "Boost Productivity", number: "50%", description: "Automating your workflow will allow you to " +
+			"increase the overall productivity of your team." },
+	{ title: "Trusted by", number: "1M+", description: "We have been responsible for growth of over 1 million companies and counting." },
+	{ title: "Increase Revenue", number: "10M+", description: "This is not just a big number, but a number you will see currently after partnering up with us." },
+];
+
 export const shoes = [
 	{ thumbnail: images.thumbnailShoe1, bigShoe: images.bigShoe1 },
 	{ thumbnail: images.thumbnailShoe2, bigShoe: images.bigShoe2 },

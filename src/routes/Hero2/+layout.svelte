@@ -5,18 +5,17 @@
 	let { children } = $props();
 </script>
 
-<header class="padding-x py-8 absolute z-10 w-full bg-black">
+<header class="px-8 py-8 sticky w-full bg-gradient-to-r from-black to-gray-700">
 	<nav class="flex justify-between items-center max-container text-white">
-		<div class="flex items-center gap-6 text-xl">
+		<div class="flex items-center gap-6 text-xl px-6">
 			<a href="/static">
-				<img src="/S4F_1.png" alt="logo" height="40" width="40">
+				<img src="/6.png" alt="logo" height="64" width="64">
 			</a>
-			<p class="font-wix font-bold">S4F</p>
 		</div>
-		<ul class="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+		<ul class="flex-1 flex justify-center items-center gap-2 border-2 border-gray-500 rounded-full bg-gray-500 bg-opacity-40 mx-64 max-lg:hidden">
 			{#each navLinks as link}
-				<li>
-					<a href="{link.href}" class="font-wix">{link.label}</a>
+				<li class="hover:bg-white hover:text-black py-2 px-8 hover:rounded-full">
+					<a href="{link.href}" class="font-wix text-sm">{link.label}</a>
 				</li>
 			{/each}
 		</ul>
