@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation'
 </script>
 
-<section id="home" class="w-full px-8 flex justify-center bg-gradient-to-t from bg-gray-50 via-bg-white to bg-blue-50">
+<section id="home" class="w-full px-8 flex justify-center bg-gradient-to-t from bg-slate-200">
 	<div class="text-center">
 		<h1 class="mt-10 font-wix text-8xl font-semibold max-w-7xl">Automate the Repetitive Focus on What Matters</h1>
 		<p class="max-w-4xl mx-auto text-lg">The time to do reports and calculations is behind us. We create custom solutions to automate your finance workflows, this way the focus is on growing your business.</p>
@@ -12,8 +12,8 @@
 	</div>
 </section>
 
-<section class="w-full px-16">
-	<div class="bg-white rounded-t-lg flex items-center shadow-2xl">
+<section class="w-full px-16 bg-slate-200">
+	<div class="bg-white rounded-t-lg flex items-center shadow-3xl">
 		<div class="px-8 pr-24 py-8 border-r-2 border-gray-100">
 			<p class="font-wix text-xl font-semibold">Your App</p>
 		</div>

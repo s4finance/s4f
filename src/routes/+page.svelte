@@ -19,8 +19,8 @@
 	import CustomerReviews from '$lib/Components/Nike_Website/CustomerReviews.svelte';
 	import Subscribe from '$lib/Components/Nike_Website/Subscribe.svelte';
 	import Footer from '$lib/Components/Nike_Website/Footer.svelte';
-	import Nav_1 from '$lib/Components/Nav_1.svelte';
-	import Hero_1 from '$lib/Components/Hero_1.svelte';
+	import Nav_1 from './Hero1/Nav_1.svelte';
+	import Hero_1 from './Hero1/Hero_1.svelte';
 
 </script>
 

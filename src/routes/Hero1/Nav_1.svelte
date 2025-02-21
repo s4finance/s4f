@@ -3,7 +3,7 @@ import { navLinks } from '../../Constants/index';
 import Button from '$lib/Components/Nike_Website/Button.svelte';
 </script>
 
-<header class="p-8 sticky z-10 w-full">
+<header class="p-8 sticky z-10 w-full bg-slate-200">
 	<nav class="flex justify-between items-center max-container">
 		<div class="flex items-center gap-6 text-xl pl-2">
 			<a href="/static">
