@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<header class="px-8 py-8 sticky w-full bg-gradient-to-r from-black to-gray-700">
+<header class="px-8 py-8 sticky w-full bg-linear-to-r from-black to-gray-700">
 	<nav class="flex justify-between items-center max-container text-white">
 		<div class="flex items-center gap-6 text-xl px-6">
 			<a href="/static">

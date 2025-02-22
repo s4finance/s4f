@@ -15,30 +15,30 @@
 	</div>
 
 	<div class="m-4 grid sm:grid-cols-2 gap-2 p-2">
-		<div class="min-h-[100px] rounded-lg bg-amber-200 shadow"></div>
-		<div class="min-h-[100px] rounded-lg bg-green-300 shadow"></div>
+		<div class="min-h-[100px] rounded-lg bg-amber-200 shadow-sm"></div>
+		<div class="min-h-[100px] rounded-lg bg-green-300 shadow-sm"></div>
 	</div>
 
 	<div class="m-4 grid  grid-cols-2 p-2 sm:grid-cols-12 gap-2">
-		<div class="min-h-[100px] rounded-lg bg-amber-200 shadow col-span-4"></div>
-		<div class="min-h-[100px] rounded-lg bg-green-300 shadow col-span-8"></div>
+		<div class="min-h-[100px] rounded-lg bg-amber-200 shadow-sm col-span-4"></div>
+		<div class="min-h-[100px] rounded-lg bg-green-300 shadow-sm col-span-8"></div>
 	</div>
 
 	<div class="m-4 grid gap-4 sm:grid-cols-12">
-		<div class="min-h-[100px] rounded-lg bg-amber-200 shadow col-span-2 sm:block hidden">
+		<div class="min-h-[100px] rounded-lg bg-amber-200 shadow-sm col-span-2 sm:block hidden">
 			<p class="text-center p-2 font-semibold ">This is noice.</p>
 		</div>
-		<div class="min-h-[100px] rounded-lg bg-orange-300 shadow col-span-8">
+		<div class="min-h-[100px] rounded-lg bg-orange-300 shadow-sm col-span-8">
 			<h1 class="font-bold text-center text-xl">Let's put a button here</h1>
 			<div class="text-center m-2">
-				<button class="bg-blue-500 hover:bg-yellow-200 text-white font-bold py-2 px-4 rounded">Click Here</button>
+				<button class="bg-blue-500 hover:bg-yellow-200 text-white font-bold py-2 px-4 rounded-sm">Click Here</button>
 				<span class="relative flex size-3">
 		<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
 		<span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
 	</span>
 			</div>
 		</div>
-		<div class="min-h-[100px] rounded-lg bg-purple-300 shadow col-span-2 sm:block hidden">
+		<div class="min-h-[100px] rounded-lg bg-purple-300 shadow-sm col-span-2 sm:block hidden">
 		</div>
 	</div>
 
@@ -68,7 +68,7 @@
 	<div class="max-md:block hidden">
 		<p>I will appear for res smaller 768px</p>
 	</div>
-	<button class="my-2 rounded-lg bg-amber-300 px-4 py-2 text-blue-700 hover:bg-blue-100 focus:outline-none focus:ring focus:ring-amber-400 active:bg-emerald-300">
+	<button class="my-2 rounded-lg bg-amber-300 px-4 py-2 text-blue-700 hover:bg-blue-100 focus:outline-hidden focus:ring-3 focus:ring-amber-400 active:bg-emerald-300">
 		Click Me!
 	</button>
 
@@ -89,7 +89,7 @@
 		</button>
 	</div>
 
-	<p class="text-2xl text-[#973F29] bg-stone-100 p-2 rounded">Chestnut Color</p>
+	<p class="text-2xl text-[#973F29] bg-stone-100 p-2 rounded-sm">Chestnut Color</p>
 
 
 </main>

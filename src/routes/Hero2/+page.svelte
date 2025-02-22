@@ -2,7 +2,7 @@
 
 import { trusts } from '../../Constants';
 </script>
-<main class="bg-gradient-to-r from-black to-gray-700">
+<main class="bg-linear-to-r from-black to-gray-700">
 	<div class="flex justify-evenly items-center w-full gap-40">
 		<div class="border-gray-100 py-2 px-4 rounded-full bg-white/10 backdrop-blur-lg">
 			<p class="font-wix text-white">Custom Workflow</p>
