@@ -2,6 +2,7 @@
 	import '../../app.css';
 	import { navLinks } from '../../Constants';
 	import Button from '$lib/Components/Nike_Website/Button.svelte';
+
 	let { children } = $props();
 </script>
 

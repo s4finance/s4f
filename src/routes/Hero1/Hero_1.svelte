@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { goto } from '$app/navigation'
+
 </script>
 
 <section id="home" class="w-full px-8 flex justify-center bg-linear-to-t from bg-slate-200">

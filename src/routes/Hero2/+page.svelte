@@ -1,7 +1,7 @@
 <script lang="ts">
-
-import { trusts } from '../../Constants';
+	import { trusts } from '../../Constants';
 </script>
+
 <main class="bg-linear-to-r from-black to-gray-700">
 	<div class="flex justify-evenly items-center w-full gap-40">
 		<div class="border-gray-100 py-2 px-4 rounded-full bg-white/10 backdrop-blur-lg">
@@ -13,7 +13,7 @@ import { trusts } from '../../Constants';
 	</div>
 	<section id="home" class="w-full flex justify-center">
 		<div class="text-center">
-			<h1 class=" font-wix text-8xl font-semibold max-w-7xl text-white">Automated Workflow. Designed for You.</h1>
+			<h1 class="font-wix text-8xl font-semibold max-w-7xl text-white">Automated Workflow. Designed for You.</h1>
 			<p class="max-w-3xl mx-auto text-lg text-white mt-4">We create custom automation solutions that eliminate repetitive tasks, streamline financial processes, and save you time, so you can focus on what matters.</p>
 			<button class="py-2 px-10 rounded-full mt-10 bg-white text-black">
 				Get in Touch

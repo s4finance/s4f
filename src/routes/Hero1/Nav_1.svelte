@@ -1,6 +1,6 @@
-<script>
-import { navLinks } from '../../Constants/index';
-import Button from '$lib/Components/Nike_Website/Button.svelte';
+<script lang="ts">
+	import { navLinks } from '../../Constants';
+	import Button from '$lib/Components/Nike_Website/Button.svelte';
 </script>
 
 <header class="p-8 sticky z-10 w-full bg-slate-200">
