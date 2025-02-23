@@ -68,12 +68,7 @@
 			<div class=" mx-2 p-4 bg-gray-50 rounded-lg shadow-xs col-span-2 bg-white border-2 mb-4">
 				<h3 class="text-gray-600">Income</h3>
 				<p class="text-xl font-semibold text-green-500">$29,866.06</p>
-				<!-- Add a chart component here -->
 			</div>
 		</main>
 	</div>
 </section>
-
-<div class="my-40 mx-40">
-	<a href="/Hero2">Go to Hero 2</a>
-</div>
