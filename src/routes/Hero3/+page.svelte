@@ -1,9 +1,8 @@
 <script lang="ts">
-
 import { navLinks } from '../../Constants';
 </script>
 
-<main class="bg-radial-[at_50%_10%] from-gray-600 to-black">
+<main class="bg-black">
 	<nav class="px-8 pb-2 sticky w-full flex justify-between items-center text-white">
 		<div>
 			<a href="/">
@@ -22,37 +21,41 @@ import { navLinks } from '../../Constants';
 		</div>
 	</nav>
 
-	<section id='Hero3' class="w-full flex justify-center items-center py-32">
-		<div class="text-center">
+	<section id='Hero3' class="w-full relative flex justify-center items-center py-20 absolute">
+		<!---->
+		<div class="absolute top-0 left-0 w-full h-full">
+			<img src="/ring2.jpg" alt="Ring Hero">
+		</div>
+		<div class="text-center z-10">
 			<h1 class="font-wix text-8xl font-semibold text-white">Experience Financial Excellence</h1>
 			<p class="mx-auto text-lg mt-4 text-white">Financial processes, perfected. Innovation, automation and expertise.</p>
+			<div class="mx-auto flex justify-center px-10 py-4 bg-gray-400/30 backdrop-blur-sm py-2 rounded-lg w-7/10">
+				<nav class="my-4 px-8">
+					<ul class="space-y-10 *:text-gray-500 *:hover:text-fuchsia-300 *:cursor-pointer">
+						<li>A</li>
+						<li>B</li>
+						<li>C</li>
+						<li>D</li>
+					</ul>
+				</nav>
+				<div class="w-full bg-gray-500/30 px-20">
+					<div class="flex justify-around items-center">
+						<h2 class="font-wix p-2 text-4xl font-semibold text-white">Your Application</h2>
+						<p class="text-sm px-6 py-2 rounded-lg bg-gray-400">Implement new workflow</p>
+					</div>
+					<div>
+						Card 1
+					</div>
+					<div>
+						Card 2
+					</div>
+					<div>
+						Card 3
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-
-	<div class="flex justify-center px-60">
-		<aside class="w-1/10 bg-gray-700 p-4 rounded-lg">
-			<nav class="mt-8">
-				<ul class="space-y-6 ml-4">
-					<li class="text-gray-600 hover:text-fuchsia-500 cursor-pointer">A</li>
-					<li class="text-gray-600 hover:text-fuchsia-500 cursor-pointer">B</li>
-					<li class="text-gray-600 hover:text-fuchsia-500 cursor-pointer">C</li>
-					<li class="text-gray-600 hover:text-fuchsia-500 cursor-pointer">D</li>
-				</ul>
-			</nav>
-		</aside>
-		<div class="w-9/10 bg-gray-500">
-			Place for title
-			<div>
-				Card 1
-			</div>
-			<div>
-				Card 2
-			</div>
-			<div>
-				Card 3
-			</div>
-		</div>
-	</div>
 </main>
 
 <div class="my-40 mx-40 flex gap-10">
