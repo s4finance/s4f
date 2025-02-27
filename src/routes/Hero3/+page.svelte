@@ -17,45 +17,49 @@ import { navLinks } from '../../Constants';
 			{/each}
 		</ul>
 		<div>
-			<button class="px-6 py-4 bg-black rounded-full text-white">Enquire</button>
+			<button class="px-10 py-2 bg-white rounded-full text-black">Enquire</button>
 		</div>
 	</nav>
 
-	<section id='Hero3' class="w-full relative flex justify-center items-center py-20 absolute">
+	<section id='Hero3' class="w-full flex flex-col justify-center py-14 absolute bg-black">
 		<!---->
-		<div class="absolute top-0 left-0 w-full h-full">
+		<div class="absolute top-0 left-0 w-full h-full opacity-70">
 			<img src="/ring2.jpg" alt="Ring Hero">
 		</div>
-		<div class="text-center z-10">
-			<h1 class="font-wix text-8xl font-semibold text-white">Experience Financial Excellence</h1>
+		<div class="text-center z-10 mb-96">
+			<h1 class=" mx-auto font-wix text-8xl font-semibold text-white max-w-4xl">Experience DevOps Excellence</h1>
 			<p class="mx-auto text-lg mt-4 text-white">Financial processes, perfected. Innovation, automation and expertise.</p>
-			<div class="mx-auto flex justify-center px-10 py-4 bg-gray-400/30 backdrop-blur-sm py-2 rounded-lg w-7/10">
-				<nav class="my-4 px-8">
-					<ul class="space-y-10 *:text-gray-500 *:hover:text-fuchsia-300 *:cursor-pointer">
-						<li>A</li>
-						<li>B</li>
-						<li>C</li>
-						<li>D</li>
-					</ul>
-				</nav>
-				<div class="w-full bg-gray-500/30 px-20">
-					<div class="flex justify-around items-center">
-						<h2 class="font-wix p-2 text-4xl font-semibold text-white">Your Application</h2>
-						<p class="text-sm px-6 py-2 rounded-lg bg-gray-400">Implement new workflow</p>
-					</div>
-					<div>
-						Card 1
-					</div>
-					<div>
-						Card 2
-					</div>
-					<div>
-						Card 3
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
+	<div class="relative z-10 px-8 mt-[700px] pt-60 pb-20 flex justify-between items-center">
+		<div class="">
+			<p class="text-white text-3xl w-2xl">Welcome to <span class="text-blue-500">S4F</span>, merging automation and tailor-made solutions in order to transform the way businesses operate.</p>
+		</div>
+	</div>
+	<div class="relative z-10 px-8 pt-20 pb-40 grid justify-items-end italic">
+		<p class="text-white text-2xl mt-10">"The future of finance is seamless.</p>
+		<p class="text-white text-2xl">The future of your business starts with S4F."</p>
+	</div>
+	<div class="bg-black px-8 py-3 flex mx-auto gap-6 text-white w-5/6">
+		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
+			<p class="text-2xl font-semibold pb-10">Tailored Solutions</p>
+			<p class="text-xl ">One business, one approach. Unique every time.</p>
+		</div>
+		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
+			<p class="text-2xl font-semibold pb-10">Exclusive, High-Value Service</p>
+			<p class="text-xl ">We work with businesses that seek perfection, precision and premium automation solutions.</p>
+		</div>
+	</div>
+	<div class="bg-black px-8 py-3 flex mx-auto gap-8 text-white w-5/6 pb-20">
+		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
+			<p class="text-2xl font-semibold pb-10">Seamless Integration</p>
+			<p class="text-xl ">Excel, enterprise software or proprietary systems, we work with your existing tools, not against them.</p>
+		</div>
+		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
+			<p class="text-2xl font-semibold pb-10">Long-Term Partnership</p>
+			<p class="text-xl ">More than just a service, we provide ongoing support, refinement and enhancements.</p>
+		</div>
+	</div>
 </main>
 
 <div class="my-40 mx-40 flex gap-10">
