@@ -1,5 +1,13 @@
 <script lang="ts">
 import { navLinks } from '../../Constants';
+import CardProduct from '$lib/Components/CardProduct.svelte';
+
+const cards = [
+	{title: 'Tailored Solutions', description: 'One business, one approach. Unique every time.', gridspan: 'col-span-3', height:'64'},
+	{title: 'Exclusive, High-Value Service', description: 'We work with businesses that seek perfection, precision and premium automation solutions.', gridspan: 'col-span-7', height:'64'},
+	{title: 'Seamless Integration', description: 'Excel, enterprise software or proprietary systems, we work with your existing tools, not against them.', gridspan: 'col-span-6', height:'64'},
+	{title: 'Long-Term Partnership', description: 'More than just a service, we provide ongoing support, refinement and enhancements.', gridspan: 'col-span-4', height:'64'},
+]
 </script>
 
 <main class="bg-black">
@@ -60,6 +68,13 @@ import { navLinks } from '../../Constants';
 			<p class="text-xl ">More than just a service, we provide ongoing support, refinement and enhancements.</p>
 		</div>
 	</div>
+
+	<div class="grid grid-cols-10 place-items-center gap-6 px-32">
+		{#each cards as card}
+		<CardProduct title="{card.title}" description={card.description} gridspan="{card.gridspan}" height="{card.height}" />
+		{/each}
+	</div>
+
 </main>
 
 <div class="my-40 mx-40 flex gap-10">
