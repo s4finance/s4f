@@ -1,6 +1,7 @@
 <script lang="ts">
 import { navLinks } from '../../Constants';
 import CardProduct from '$lib/Components/CardProduct.svelte';
+import JourneyCard from '$lib/Components/JourneyCard.svelte';
 
 const cards = [
 	{title: 'Tailored Solutions', description: 'One business, one approach. Unique every time.', gridspan: 'col-span-3', height:'64'},
@@ -29,7 +30,7 @@ const cards = [
 		</div>
 	</nav>
 
-	<section id='Hero3' class="w-full flex flex-col justify-center py-14 absolute bg-black">
+	<section id='Hero3' class="w-full flex flex-col justify-center py-14 absolute bg-black h-full">
 		<!---->
 		<div class="absolute top-0 left-0 w-full h-full opacity-70">
 			<img src="/ring2.jpg" alt="Ring Hero">
@@ -39,7 +40,7 @@ const cards = [
 			<p class="mx-auto text-lg mt-4 text-white">Financial processes, perfected. Innovation, automation and expertise.</p>
 		</div>
 	</section>
-	<div class="relative z-10 px-8 mt-[700px] pt-60 pb-20 flex justify-between items-center">
+	<div class="relative z-10 px-8 mt-[700px] pt-40 pb-20 flex justify-between items-center">
 		<div class="">
 			<p class="text-white text-3xl w-2xl">Welcome to <span class="text-blue-500">S4F</span>, merging automation and tailor-made solutions in order to transform the way businesses operate.</p>
 		</div>
@@ -48,32 +49,42 @@ const cards = [
 		<p class="text-white text-2xl mt-10">"The future of finance is seamless.</p>
 		<p class="text-white text-2xl">The future of your business starts with S4F."</p>
 	</div>
-	<div class="bg-black px-8 py-3 flex mx-auto gap-6 text-white w-5/6">
-		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
-			<p class="text-2xl font-semibold pb-10">Tailored Solutions</p>
-			<p class="text-xl ">One business, one approach. Unique every time.</p>
-		</div>
-		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
-			<p class="text-2xl font-semibold pb-10">Exclusive, High-Value Service</p>
-			<p class="text-xl ">We work with businesses that seek perfection, precision and premium automation solutions.</p>
-		</div>
-	</div>
-	<div class="bg-black px-8 py-3 flex mx-auto gap-8 text-white w-5/6 pb-20">
-		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
-			<p class="text-2xl font-semibold pb-10">Seamless Integration</p>
-			<p class="text-xl ">Excel, enterprise software or proprietary systems, we work with your existing tools, not against them.</p>
-		</div>
-		<div class="px-10 py-6 border-2 border-blue-500 rounded-2xl shadow-sm shadow-white transition hover:bg-blue-500 duration-100">
-			<p class="text-2xl font-semibold pb-10">Long-Term Partnership</p>
-			<p class="text-xl ">More than just a service, we provide ongoing support, refinement and enhancements.</p>
-		</div>
-	</div>
 
 	<div class="grid grid-cols-10 place-items-center gap-6 px-32">
 		{#each cards as card}
 		<CardProduct title="{card.title}" description={card.description} gridspan="{card.gridspan}" height="{card.height}" />
 		{/each}
 	</div>
+
+	<section id="Journey1" class="p-10 grid grid-cols-10 px-32 h-dvh items-center">
+		<div class="col-span-7 h-8/10 w-8/10 m-8 border-4 border-[#FFD700] rounded-4xl text-white"> <!-- This will be the card itself -->
+			<h2 class="text-4xl p-12 font-semibold">Consulting</h2>
+			<p class="px-12 text-xl h-80 place-content-end">
+				This is an example of description that will later be replaced by the most exquisite and mind-blowing text you have ever seen in
+			your life my dude. Get ready to experience excellence.
+			</p>
+		</div>
+		<div> <!-- Put the column containing the steps -->
+			<div class="flex-col *:py-4 *:my-4 text-xl font-semibold text-white *:w-96 *:rounded-xl ">
+				<p class="hover:bg-linear-to-r hover:from-[#FFD700] hover:to-black"><span class="text-2xl font-semibold px-4">1.</span>Consulting</p>
+				<p><span class="text-2xl font-semibold px-4">2.</span>Prototyping</p>
+				<p><span class="text-2xl font-semibold px-4">3.</span>Deployment</p>
+				<p><span class="text-2xl font-semibold px-4">4.</span>Maintenance</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="Journey2" class="p-10">
+		<JourneyCard />
+		<div class="m-10 px-2 my-1 bg-slate-400 rounded-full flex justify-between">
+			<div class="size-5 rounded-full bg-white"></div>
+			<div class="size-5 rounded-full bg-white"></div>
+			<div class="size-5 rounded-full bg-white"></div>
+			<div class="size-5 rounded-full bg-white"></div>
+		</div>
+	</section>
+
+
 
 </main>
 
