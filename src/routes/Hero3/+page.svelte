@@ -2,75 +2,118 @@
 import { navLinks } from '../../Constants';
 import CardProduct from '$lib/Components/CardProduct.svelte';
 import JourneyCard from '$lib/Components/JourneyCard.svelte';
+import ButtonLink from '$lib/Components/ButtonLink.svelte';
+import Button from '$lib/Components/Button.svelte';
+
+const navInfo =[
+	{link: '#home3', label: 'Home'},
+	{link: "#about", label: 'About'},
+	{link: "#whyus", label: 'Why Us'},
+	{link: "#process", label: 'Process'},
+
+]
 
 const cards = [
-	{title: 'Tailored Solutions', description: 'One business, one approach. Unique every time.', gridspan: 'col-span-3', height:'64'},
-	{title: 'Exclusive, High-Value Service', description: 'We work with businesses that seek perfection, precision and premium automation solutions.', gridspan: 'col-span-7', height:'64'},
-	{title: 'Seamless Integration', description: 'Excel, enterprise software or proprietary systems, we work with your existing tools, not against them.', gridspan: 'col-span-6', height:'64'},
-	{title: 'Long-Term Partnership', description: 'More than just a service, we provide ongoing support, refinement and enhancements.', gridspan: 'col-span-4', height:'64'},
+	{title: 'Tailored Solutions', description: 'One business, one approach. Unique every time.'},
+	{title: 'Exclusive, High-Value Service', description: 'We work with businesses that seek perfection, precision and premium automation solutions.', gridspan: 'col-span-7'},
+	{title: 'Seamless Integration', description: 'Excel, enterprise software or proprietary systems, we work with your existing tools, not against them.', gridspan: 'col-span-6'},
+	{title: 'Long-Term Partnership', description: 'More than just a service, we provide ongoing support, refinement and enhancements.', gridspan: 'col-span-4'},
 ]
+
+const services = [
+	{descr: 'Design'}, {descr: 'Layout'}, {descr: 'Infrastructure'},
+]
+
+const processCards = [
+	{title: 'Consulting', descr: 'Start with an in-depth consultation, where we analyze your workflows, challenges and objectives. The goal is to craft a vision that aligns with your goals, ensuring the solution is tailored to your needs.', do1: 'Discovery', do2: 'Understanding', do3: 'Tailored'},
+	{title: 'Prototyping', descr: "Excellence begins with precision. We'll develop a high-fidelity prototype, allowing you to use and experience the transformation before full deployment. Details are refined a optimized to align seamlessly with your existing tools." , do1: 'Design', do2: 'Layout', do3: 'Infrastructure'},
+	{title: 'Deployment', descr: 'We implement your bespoke solution into your financial ecosystem. We handle every technical detail or work with your experts in order to reach a stress-free deployment.', do1: 'Installation', do2: 'Onboarding', do3: 'Integration'},
+	{title: 'Maintenance', descr: "Our commitment doesn't stop at deployment. We provide ongoing support, optimization and enhancements, ensuring your solution evolves with your business needs." , do1: 'Bugs', do2: 'Fixes', do3: 'Small additions'},
+]
+
+let x = $state(0);
+
+function handle(){
+
+}
 </script>
 
 <main class="bg-black">
-	<nav class="px-8 pb-2 sticky w-full flex justify-between items-center text-white">
+	<nav class="px-8 py-4 sticky w-full flex justify-between items-center text-white">
 		<div>
-			<a href="/">
-				<img src="/6.png" alt="logo" height="80px" width="80px" />
+			<a href="/Hero3">
+				<img src="/6.png" alt="logo" height="60px" width="60px" />
 			</a>
 		</div>
-		<ul class="flex justify-right items-center gap-16">
-			{#each navLinks as link}
-				<li class="border-b-2 border-transparent hover:border-b-2 hover:border-white">
-					<a href="{link.href}" class="font-wix">{link.label}</a>
+		<ul class="flex justify-right items-center gap-6">
+			{#each navInfo as nav}
+				<li class="">
+					<ButtonLink link={nav.link}>{nav.label}</ButtonLink>
 				</li>
 			{/each}
 		</ul>
 		<div>
-			<button class="px-10 py-2 bg-white rounded-full text-black">Enquire</button>
+			<Button >Enquire</Button>
 		</div>
 	</nav>
 
-	<section id='Hero3' class="w-full flex flex-col justify-center py-14 absolute bg-black h-full">
+	<section id='home3' class="w-full flex flex-col justify-center py-14 absolute bg-black h-full">
 		<!---->
 		<div class="absolute top-0 left-0 w-full h-full opacity-70">
 			<img src="/ring2.jpg" alt="Ring Hero">
 		</div>
 		<div class="text-center z-10 mb-96">
-			<h1 class=" mx-auto font-wix text-8xl font-semibold text-white max-w-4xl">Experience DevOps Excellence</h1>
+			<h1 class=" mx-auto font-wix text-8xl font-semibold text-white max-w-4xl">Experience Fintech Excellence</h1>
 			<p class="mx-auto text-lg mt-4 text-white">Financial processes, perfected. Innovation, automation and expertise.</p>
 		</div>
 	</section>
-	<div class="relative z-10 px-8 mt-[700px] pt-40 pb-20 flex justify-between items-center">
-		<div class="">
-			<p class="text-white text-3xl w-2xl">Welcome to <span class="text-blue-500">S4F</span>, merging automation and tailor-made solutions in order to transform the way businesses operate.</p>
+	<div class="relative z-10  mt-[700px] pt-32 flex justify-between items-center">
+		<div class="mx-32 pb-20 pt-10 border-r-2 border-gray-800">
+			<p class="text-white text-3xl w-2xl">Welcome to <span class="text-[#52B7FF]">S4F</span>, merging automation and tailor-made solutions in order to transform the way businesses operate.</p>
 		</div>
 	</div>
-	<div class="relative z-10 px-8 pt-20 pb-40 grid justify-items-end italic">
+	<div class="border-b-2 border-b-gray-800"></div>
+	<div class="relative z-10 px-8 pt-20 pb-40 grid justify-items-end italic border-r-2 border-gray-800 w-9/10">
 		<p class="text-white text-2xl mt-10">"The future of finance is seamless.</p>
 		<p class="text-white text-2xl">The future of your business starts with S4F."</p>
 	</div>
-
-	<div class="grid grid-cols-10 place-items-center gap-6 px-32">
-		{#each cards as card}
-		<CardProduct title="{card.title}" description={card.description} gridspan="{card.gridspan}" height="{card.height}" />
-		{/each}
+	<h2 id="whyus" class="p-30 py-10 text-6xl text-white border-b-1 border-b-neutral-800">The Advantages</h2>
+	<div id="whyus" class="grid grid-cols-10 place-items-center gap-6 px-32 py-20 *:duration-500 bg-linear-to-b from-neutral-900 from-15% to-black">
+		<div class="col-span-3 h-full rounded-lg p-[1px] bg-linear-to-b from-neutral-700 to-black">
+			<CardProduct class="col-span-3" title={cards[0].title} description={cards[0].description} />
+		</div>
+		<div class="col-span-7 h-full rounded-lg p-[1px] bg-linear-to-b from-neutral-700 to-black">
+			<CardProduct class="col-span-7" title={cards[1].title} description={cards[1].description} />
+		</div>
+		<div class="col-span-6 h-full rounded-lg p-[1px] bg-linear-to-b from-neutral-700 to-black">
+			<CardProduct class="col-span-6" title={cards[2].title} description={cards[2].description} />
+		</div>
+		<div class="col-span-4 h-full rounded-lg p-[1px] bg-linear-to-b from-neutral-700 to-black">
+			<CardProduct class="col-span-4" title={cards[3].title} description={cards[3].description} />
+		</div>
 	</div>
-
-	<section id="Journey1" class="p-10 grid grid-cols-10 px-32 h-dvh items-center">
-		<div class="col-span-7 h-8/10 w-8/10 m-8 border-4 border-[#FFD700] rounded-4xl text-white"> <!-- This will be the card itself -->
-			<h2 class="text-4xl p-12 font-semibold">Consulting</h2>
-			<p class="px-12 text-xl h-80 place-content-end">
-				This is an example of description that will later be replaced by the most exquisite and mind-blowing text you have ever seen in
-			your life my dude. Get ready to experience excellence.
+	<h2 id="process" class="px-30 py-10 text-6xl text-white border-b-1 border-b-neutral-800">The Process</h2>
+	<section  class="p-10 grid grid-cols-10 px-32 h-dvh items-center bg-linear-to-b from-neutral-900 from-15% to-black">
+		<div class="col-span-7 h-8/10 w-8/10 m-8 border-1 border-[#FFD700] rounded-xl text-white"> <!-- This will be the card itself -->
+			<h2 class="text-4xl px-12 py-16 font-semibold">{processCards[x].title}</h2>
+			<div class="flex justify-center items-center gap-4 h-40">
+				<div class="size-2 rounded-full bg-[#FFD700]"></div>
+				<p class="text-2xl">{processCards[x].do1}</p>
+				<div class="size-2 rounded-full bg-[#FFD700]"></div>
+				<p class="text-2xl">{processCards[x].do2}</p>
+				<div class="size-2 rounded-full bg-[#FFD700]"></div>
+				<p class="text-2xl">{processCards[x].do3}</p>
+			</div>
+			<p class="px-12 text-xl h-48 place-content-end">
+				{processCards[x].descr}
 			</p>
 		</div>
-		<div> <!-- Put the column containing the steps -->
-			<div class="flex-col *:py-4 *:my-4 text-xl font-semibold text-white *:w-96 *:rounded-xl ">
-				<p class="hover:bg-linear-to-r hover:from-[#FFD700] hover:to-black"><span class="text-2xl font-semibold px-4">1.</span>Consulting</p>
-				<p><span class="text-2xl font-semibold px-4">2.</span>Prototyping</p>
-				<p><span class="text-2xl font-semibold px-4">3.</span>Deployment</p>
-				<p><span class="text-2xl font-semibold px-4">4.</span>Maintenance</p>
-			</div>
+		 <!-- Put the column containing the steps | to-do: onclick={() => x = 1} -->
+		<div class="*:w-full col-span-3 gap-4 text-xl font-semibold text-white *:rounded-xl *:px-2 *:py-1 *:my-4 *:hover:bg-linear-to-r *:hover:from-[#FFD700] *:hover:to-black *:text-left">
+			<button onclick={() => x = 0}><span class="text-2xl font-semibold">1.</span>Consulting</button>
+			<button onclick={() => x = 1}><span class="text-2xl font-semibold">2.</span>Prototyping</button>
+			<button onclick={() => x = 2}><span class="text-2xl font-semibold">3.</span>Deployment</button>
+			<button onclick={() => x = 3}><span class="text-2xl font-semibold">4.</span>Maintenance</button>
 		</div>
 	</section>
 
@@ -83,6 +126,9 @@ const cards = [
 			<div class="size-5 rounded-full bg-white"></div>
 		</div>
 	</section>
+
+	<h2 class="px-36 pt-32 text-6xl text-white">The First Step</h2>
+
 
 
 
