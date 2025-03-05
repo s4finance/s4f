@@ -8,7 +8,6 @@
 		{link: "#about", label: 'About'},
 		{link: "#whyus", label: 'Why Us'},
 		{link: "#process", label: 'Process'},
-
 	]
 
 	const cards = [
@@ -33,27 +32,23 @@
 </script>
 
 <main class="bg-black">
-	<nav class="px-8 py-4 sticky w-full flex justify-between items-center text-white">
-		<div>
-			<a href="/Hero3">
-				<img src="/6.png" alt="logo" height="60px" width="60px" />
-			</a>
-		</div>
-		<ul class="flex justify-center items-center gap-6 bg-neutral-800 rounded-lg border-gray-700">
+	<nav class="px-8 py-4 sticky w-full flex justify-between items-center ">
+		<a href="/Hero3">
+			<img src="/6.png" alt="logo" height="60px" width="60px" />
+		</a>
+		<ul class="flex justify-center items-center gap-2 bg-neutral-800 rounded-lg border-gray-700">
 			{#each navInfo as nav}
-				<li>
-					<ButtonLink link={nav.link}>{nav.label}</ButtonLink>
+				<li class="block">
+					<ButtonLink flavor="dark" link={nav.link}>{nav.label}</ButtonLink>
 				</li>
 			{/each}
 		</ul>
-		<div>
-			<Button >Enquire</Button>
-		</div>
+		<Button flavor="dark">Enquire</Button>
 	</nav>
 
-	<section id='home3' class="w-full flex flex-col justify-center py-14 absolute bg-black h-full">
+	<section id='home3' class="w-full flex flex-col justify-center py-14 bg-black h-full">
 		<!---->
-		<div class="absolute top-0 left-0 w-full h-full opacity-70">
+		<div class="absolute top-20 left-0 w-full h-full opacity-70">
 			<img src="/ring2.jpg" alt="Ring Hero">
 		</div>
 		<div class="text-center z-10 mb-96">
@@ -61,7 +56,7 @@
 			<p class="mx-auto text-lg mt-4 text-white">Financial processes, perfected. Innovation, automation and expertise.</p>
 		</div>
 	</section>
-	<div class="relative z-10  mt-[700px] pt-32 flex justify-between items-center">
+	<div class="relative z-10 pt-32 flex justify-between items-center">
 		<div class="mx-32 pb-20 pt-10 border-r-2 border-gray-800">
 			<p class="text-white text-3xl w-2xl">Welcome to <span class="text-[#52B7FF]">S4F</span>, merging automation and tailor-made solutions in order to transform the way businesses operate.</p>
 		</div>
@@ -103,7 +98,7 @@
 			</p>
 		</div>
 		<!-- Put the column containing the steps | to-do: onclick={() => x = 1} -->
-		<div class="*:w-full col-span-3 gap-4 text-xl font-semibold text-white *:rounded-xl *:px-2 *:py-1 *:my-4 *:hover:bg-linear-to-r *:hover:from-[#FFD700] *:hover:to-black *:text-left">
+		<div class="*:w-full col-span-3 gap-4 text-xl font-semibold text-white *:rounded-xl *:px-2 *:py-1 *:my-4 *:hover:bg-linear-to-r *:hover:from-[#FFD700] *:hover:to-black *:text-left *:duration-500 *:bg-transparent">
 			<button onclick={() => x = 0}><span class="text-2xl font-semibold">1.</span>Consulting</button>
 			<button onclick={() => x = 1}><span class="text-2xl font-semibold">2.</span>Prototyping</button>
 			<button onclick={() => x = 2}><span class="text-2xl font-semibold">3.</span>Deployment</button>

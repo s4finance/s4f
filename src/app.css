@@ -4,6 +4,9 @@
 	--font-palanquin: Palanquin, sans-serif;
 	--font-montserrat: Montserrat, sans-serif;
 	--font-wix: Wix Madefor Display, sans-serif;
+	--font-russo: Russo One, sans-serif;
+	--font-audiowide: Audiowide, sans-serif;
+	--font-copperplate: Copperplate;
 
 	--color-primary: #eceeff;
 	--color-coral-red: #ff6452;
@@ -23,6 +26,13 @@
 	::file-selector-button {
 		border-color: var(--color-gray-200, currentColor);
 	}
+}
+
+@font-face {
+	font-family: 'Copperplate';
+	src: url('../static/fonts/Copperplate.otf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @utility card {
@@ -45,6 +55,36 @@
 @layer utilities {
 	body {
 		font-family: 'Wix Madefor Display', sans-serif;
+	}
+}
+
+@layer utilities {
+	@keyframes blob {
+		0% {
+			transform: translate(0px, 0px) scale(1);
+		}
+		33% {
+			transform: translate(20px, 10px) scale(1.1);
+		}
+		66% {
+			transform: translate(-40px, -40px) scale(0.9);
+		}
+		100% {
+			transform: translate(0px, 0px) scale(1);
+		}
+	}
+
+	.animate-blob {
+		animation: blob 20s infinite;
+	}
+}
+
+@layer utilities {
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+	.animation-delay-5000 {
+		animation-delay: 5s;
 	}
 }
 
