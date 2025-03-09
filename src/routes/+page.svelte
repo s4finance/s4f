@@ -126,4 +126,5 @@
 	<a href="/" class="border-2 px-2 py-2 border-black rounded-full">Go to Hero 1</a>
 	<a href="/Hero3" class="border-2 px-2 py-2 border-black rounded-full">Go to Hero 3</a>
 	<a href="/Hero4" class="border-2 px-2 py-2 border-black rounded-full">Go to Hero 4</a>
+	<a href="/Hero5" class="border-2 px-2 py-2 border-black rounded-full">Go to Hero 5</a>
 </div>
